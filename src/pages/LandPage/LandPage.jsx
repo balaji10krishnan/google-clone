@@ -24,7 +24,7 @@ const LandPage = () => {
             handleSearchValue(e);
           }}
           onKeyDown={(e) => {
-            if (e.key === "Enter") {
+            if (e.key === "Enter" && searchValue.trim() !== "") {
               navigate("/search", { state: { query: e.target.value } });
             }
           }}
@@ -56,7 +56,9 @@ const LandPage = () => {
           <button
             className={classes["gray-btn"]}
             onClick={() => {
-              navigate("/search", { state: { query: searchValue } });
+              if (searchValue.trim() !== "") {
+                navigate("/search", { state: { query: searchValue } });
+              }
             }}
           >
             Google Search

@@ -1,0 +1,36 @@
+.search-header {
+  display: flex;
+  gap: 30px;
+  padding: 30px;
+  border-bottom: 1px solid #808080;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: white;
+}
+.search-header img {
+  width: 150px;
+}
+.menu-list {
+  margin-top: 20px;
+  gap: 15px;
+  display: flex;
+}
+.menu-item {
+  color: #808080;
+  display: flex;
+  gap: 5px;
+  align-items: end;
+}
+@media screen and (max-width: 961px) {
+  .search-header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .menu-list {
+    display: none;
+  }
+}

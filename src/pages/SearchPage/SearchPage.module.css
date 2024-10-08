@@ -1,0 +1,22 @@
+.search-container {
+  margin-left: 250px;
+  padding-top: 180px;
+}
+.time {
+  color: #70757a;
+  font-size: 14px;
+  padding-inline: 20px;
+}
+
+@media screen and (max-width: 1020px) {
+  .search-container {
+    margin-left: 0;
+    padding-inline: 20px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .search-container {
+    padding-top: 250px;
+  }
+}

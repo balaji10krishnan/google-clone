@@ -1,0 +1,21 @@
+.header-gap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+.header {
+  display: flex;
+  gap: 5px;
+  align-items: end;
+}
+.header img {
+  width: 15px;
+}
+.title {
+  font-size: 24px;
+  text-decoration: none;
+}
+.title:hover {
+  text-decoration: underline;
+}
