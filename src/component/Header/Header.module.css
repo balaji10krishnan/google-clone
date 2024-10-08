@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header-item {
+  display: flex;
+  gap: 1em;
+  padding: 1.5em;
+}
+.header-item * {
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .hide {
+    display: none;
+  }
+}
