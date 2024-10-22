@@ -51,7 +51,7 @@ const SearchPage = () => {
     }
   }, []);
   useEffect(() => {
-    fetchData();
+    fetchData(query);
   }, [query]);
   return (
     <>
